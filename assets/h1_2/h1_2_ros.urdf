@@ -20,7 +20,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/pelvis.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/pelvis.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -44,7 +44,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_hip_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_hip_yaw_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -73,7 +73,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_hip_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_hip_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -102,7 +102,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_hip_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_hip_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -131,7 +131,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_knee_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_knee_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -160,7 +160,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_ankle_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_ankle_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -169,7 +169,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_ankle_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_ankle_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -189,7 +189,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_ankle_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_ankle_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -198,7 +198,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_ankle_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_ankle_roll_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -220,7 +220,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_hip_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_hip_yaw_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -249,7 +249,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_hip_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_hip_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -278,7 +278,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_hip_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_hip_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -307,7 +307,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_knee_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_knee_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -336,7 +336,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_ankle_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_ankle_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -345,7 +345,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_ankle_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_ankle_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -365,7 +365,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_ankle_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_ankle_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -374,7 +374,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_ankle_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_ankle_roll_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -396,7 +396,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/torso_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/torso_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -427,7 +427,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_shoulder_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_shoulder_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -436,7 +436,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_shoulder_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_shoulder_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -456,7 +456,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_shoulder_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_shoulder_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -465,7 +465,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_shoulder_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_shoulder_roll_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -485,7 +485,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_shoulder_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_shoulder_yaw_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -494,7 +494,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_shoulder_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_shoulder_yaw_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -514,7 +514,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_elbow_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_elbow_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -523,7 +523,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_elbow_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_elbow_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -544,7 +544,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_elbow_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_elbow_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -552,7 +552,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_elbow_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_elbow_roll_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -573,7 +573,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_wrist_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_wrist_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -581,7 +581,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/left_wrist_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/left_wrist_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -601,7 +601,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/wrist_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/wrist_yaw_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -610,7 +610,7 @@
     <!-- <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/wrist_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/wrist_yaw_link.STL"/>
       </geometry>
     </collision> -->
   </link>
@@ -632,7 +632,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_shoulder_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_shoulder_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -641,7 +641,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_shoulder_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_shoulder_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -661,7 +661,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_shoulder_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_shoulder_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -670,7 +670,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_shoulder_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_shoulder_roll_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -691,7 +691,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_shoulder_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_shoulder_yaw_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -700,7 +700,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_shoulder_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_shoulder_yaw_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -720,7 +720,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_elbow_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_elbow_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -729,7 +729,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_elbow_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_elbow_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -750,7 +750,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_elbow_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_elbow_roll_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -758,7 +758,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_elbow_roll_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_elbow_roll_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -779,7 +779,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_wrist_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_wrist_pitch_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -787,7 +787,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/right_wrist_pitch_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/right_wrist_pitch_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -807,7 +807,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/wrist_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/wrist_yaw_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -816,7 +816,7 @@
     <!-- <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/wrist_yaw_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/wrist_yaw_link.STL"/>
       </geometry>
     </collision> -->
   </link>
@@ -833,7 +833,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/logo_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/logo_link.STL"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -902,7 +902,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/L_hand_base_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/L_hand_base_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -911,7 +911,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/L_hand_base_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/L_hand_base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -924,7 +924,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link11_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link11_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -933,7 +933,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link11_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link11_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -953,7 +953,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link12_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link12_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -962,7 +962,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link12_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link12_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -982,7 +982,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link13_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link13_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -991,7 +991,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link13_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link13_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1012,7 +1012,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link14_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link14_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1021,7 +1021,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link14_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link14_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1042,7 +1042,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link15_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link15_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1051,7 +1051,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link15_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link15_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1071,7 +1071,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link16_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link16_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1080,7 +1080,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link16_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link16_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1101,7 +1101,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link17_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link17_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1110,7 +1110,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link17_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link17_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1130,7 +1130,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link18_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link18_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1139,7 +1139,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link18_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link18_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1160,7 +1160,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link19_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link19_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1169,7 +1169,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link19_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link19_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1189,7 +1189,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link20_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link20_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1198,7 +1198,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link20_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link20_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1219,7 +1219,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link21_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link21_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1228,7 +1228,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link21_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link21_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1248,7 +1248,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link22_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link22_L.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1257,7 +1257,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link22_L.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link22_L.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1285,7 +1285,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/R_hand_base_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/R_hand_base_link.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1294,7 +1294,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/R_hand_base_link.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/R_hand_base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1307,7 +1307,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link11_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link11_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1316,7 +1316,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link11_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link11_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1336,7 +1336,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link12_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link12_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1345,7 +1345,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link12_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link12_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1365,7 +1365,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link13_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link13_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1374,7 +1374,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link13_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link13_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1395,7 +1395,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link14_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link14_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1404,7 +1404,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link14_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link14_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1425,7 +1425,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link15_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link15_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1434,7 +1434,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link15_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link15_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1454,7 +1454,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link16_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link16_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1463,7 +1463,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link16_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link16_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1484,7 +1484,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link17_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link17_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1493,7 +1493,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link17_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link17_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1513,7 +1513,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link18_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link18_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1522,7 +1522,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link18_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link18_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1543,7 +1543,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link19_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link19_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1552,7 +1552,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link19_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link19_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1572,7 +1572,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link20_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link20_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1581,7 +1581,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link20_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link20_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1602,7 +1602,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link21_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link21_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1611,7 +1611,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link21_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link21_R.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1631,7 +1631,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link22_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link22_R.STL"/>
       </geometry>
       <material name="dark">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -1640,7 +1640,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://h12_ros2_controller/assets/h1_2/meshes/link22_R.STL"/>
+        <mesh filename="package://h12_ros2_model/assets/h1_2/meshes/link22_R.STL"/>
       </geometry>
     </collision>
   </link>
