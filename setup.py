@@ -8,6 +8,7 @@ data_files = [
     ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
     ('share/' + package_name, ['package.xml']),
     ('share/' + package_name + '/launch', glob('launch/*.py')),
+    ('share/' + package_name + '/rviz', glob('rviz/*.rviz')),
 ]
 '''
 Access assets in the share directory of the package.
@@ -28,7 +29,7 @@ for path in glob('assets/**/*', recursive=True):
 
 setup(
     name=package_name,
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(exclude=['test']),
     include_package_data=True,
     data_files=data_files,
