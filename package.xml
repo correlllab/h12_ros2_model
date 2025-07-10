@@ -7,7 +7,9 @@
   <maintainer email="zhangyt2000@gmail.com">tonyzyt2000</maintainer>
   <license>BSD-3-Clause</license>
 
-  <depend>robot_state_publisher</depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
