@@ -8,32 +8,41 @@ package_name = 'h12_ros2_model'
 # standalone-buildable: it must live at <repo>/core_ws/src/h12_ros2_model so
 # that ../../../assets/ resolves. See README.md.
 HERE = os.path.dirname(os.path.abspath(__file__))
-TOP_ASSETS = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'assets'))
+TOP_ASSETS_REL = os.path.join('..', '..', '..', 'assets')
+TOP_ASSETS_ABS = os.path.normpath(os.path.join(HERE, TOP_ASSETS_REL))
 
 
 def _files(*patterns):
+    """Glob `patterns` (relative to HERE) and return paths still relative to HERE.
+
+    colcon's ament_python builder asserts that data_files source paths are
+    relative strings, so we glob via absolute paths but emit relative ones.
+    """
     out = []
-    for p in patterns:
-        out.extend(f for f in glob(p) if os.path.isfile(f))
+    for pat in patterns:
+        abs_pat = pat if os.path.isabs(pat) else os.path.join(HERE, pat)
+        for abs_path in glob(abs_pat):
+            if os.path.isfile(abs_path):
+                out.append(os.path.relpath(abs_path, HERE))
     return out
 
 
-h1_2_meshes = _files(os.path.join(TOP_ASSETS, 'meshes', 'h1_2', '*.STL'))
+h1_2_meshes = _files(os.path.join(TOP_ASSETS_REL, 'meshes', 'h1_2', '*.STL'))
 h1_2_descriptors = _files(
-    os.path.join(TOP_ASSETS, 'ros_assets', 'h1_2*.urdf'),
-    os.path.join(TOP_ASSETS, 'ros_assets', 'h1_2*.srdf'),
+    os.path.join(TOP_ASSETS_REL, 'ros_assets', 'h1_2*.urdf'),
+    os.path.join(TOP_ASSETS_REL, 'ros_assets', 'h1_2*.srdf'),
 )
 
-if not os.path.isdir(TOP_ASSETS):
+if not os.path.isdir(TOP_ASSETS_ABS):
     raise RuntimeError(
-        f"h12_ros2_model expected top-level assets at {TOP_ASSETS} but the "
-        "directory does not exist. This package must be built inside the "
+        f"h12_ros2_model expected top-level assets at {TOP_ASSETS_ABS} but "
+        "the directory does not exist. This package must be built inside the "
         "Humanoid_Simulation workspace; standalone clones are not supported."
     )
 if not h1_2_meshes:
-    raise RuntimeError(f"No H1-2 meshes found under {TOP_ASSETS}/meshes/h1_2/")
+    raise RuntimeError(f"No H1-2 meshes found under {TOP_ASSETS_ABS}/meshes/h1_2/")
 if not h1_2_descriptors:
-    raise RuntimeError(f"No H1-2 URDF/SRDF found under {TOP_ASSETS}/ros_assets/")
+    raise RuntimeError(f"No H1-2 URDF/SRDF found under {TOP_ASSETS_ABS}/ros_assets/")
 
 h1_2_local_extras = _files(
     'assets/h1_2/*.xml',
