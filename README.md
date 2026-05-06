@@ -4,9 +4,18 @@ ROS2 package of h12 robot description.
 
 ## File
 
-- Robot description files are located under `assets/` directory.
-- `assets/h1_2/h1_2.urdf` contains description with relative mesh path, suitable for libraries like Pinocchio.
-- `assets/h1_2/h1_2_ros.urdf` contains description with package mesh path, suitable for ROS integration.
+- Robot description files (URDFs, SRDFs) and meshes are sourced from the parent
+  `Humanoid_Simulation` repo's top-level `assets/` directory. They are pulled in
+  at build time by `setup.py` and installed under the package's `share/` tree,
+  so consumers can keep using `package://h12_ros2_model/assets/h1_2/...` URLs
+  and the runtime layout is unchanged.
+- The `assets/h1_2/h1_2_ros.urdf` (sourced from `assets/ros_assets/`) contains
+  description with package mesh paths, suitable for ROS integration.
+
+> **Not standalone-buildable.** This package must live at
+> `<Humanoid_Simulation>/core_ws/src/h12_ros2_model` so that `setup.py` can
+> resolve `../../../assets/`. A bare clone outside that workspace will fail at
+> build time with a clear error.
 
 ## Dependencies
 

@@ -4,28 +4,57 @@ from setuptools import find_packages, setup
 
 package_name = 'h12_ros2_model'
 
+# Top-level repo's canonical asset directory. This package is no longer
+# standalone-buildable: it must live at <repo>/core_ws/src/h12_ros2_model so
+# that ../../../assets/ resolves. See README.md.
+HERE = os.path.dirname(os.path.abspath(__file__))
+TOP_ASSETS = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'assets'))
+
+
+def _files(*patterns):
+    out = []
+    for p in patterns:
+        out.extend(f for f in glob(p) if os.path.isfile(f))
+    return out
+
+
+h1_2_meshes = _files(os.path.join(TOP_ASSETS, 'meshes', 'h1_2', '*.STL'))
+h1_2_descriptors = _files(
+    os.path.join(TOP_ASSETS, 'ros_assets', 'h1_2*.urdf'),
+    os.path.join(TOP_ASSETS, 'ros_assets', 'h1_2*.srdf'),
+)
+
+if not os.path.isdir(TOP_ASSETS):
+    raise RuntimeError(
+        f"h12_ros2_model expected top-level assets at {TOP_ASSETS} but the "
+        "directory does not exist. This package must be built inside the "
+        "Humanoid_Simulation workspace; standalone clones are not supported."
+    )
+if not h1_2_meshes:
+    raise RuntimeError(f"No H1-2 meshes found under {TOP_ASSETS}/meshes/h1_2/")
+if not h1_2_descriptors:
+    raise RuntimeError(f"No H1-2 URDF/SRDF found under {TOP_ASSETS}/ros_assets/")
+
+h1_2_local_extras = _files(
+    'assets/h1_2/*.xml',
+    'assets/h1_2/*.png',
+    'assets/h1_2/README.md',
+)
+
 data_files = [
     ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
     ('share/' + package_name, ['package.xml']),
     ('share/' + package_name + '/launch', glob('launch/*.py')),
     ('share/' + package_name + '/rviz', glob('rviz/*.rviz')),
+    # H1-2 assets: meshes + URDFs/SRDFs come from the top-level canonical
+    # location; *.xml / *.png / README.md remain submodule-only.
+    ('share/' + package_name + '/assets/h1_2/meshes', h1_2_meshes),
+    ('share/' + package_name + '/assets/h1_2', h1_2_descriptors + h1_2_local_extras),
+    ('share/' + package_name + '/assets', _files(
+        'assets/h1-2_tf.jpg',
+        'assets/LICENSE',
+    )),
 ]
-'''
-Access assets in the share directory of the package.
-
-Example usage:
-
-```python
-from ament_index_python.packages import get_package_share_directory
-
-package_path = get_package_share_directory('h12_ros2_model')
-print(f'Asset file: {package_path}/assets/{asset_file}')
-```
-'''
-for path in glob('assets/**/*', recursive=True):
-    if os.path.isfile(path):  # Skip directories
-        install_path = os.path.join('share', package_name, os.path.dirname(path))
-        data_files.append((install_path, [path]))
 
 setup(
     name=package_name,
