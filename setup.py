@@ -28,6 +28,7 @@ def _files(*patterns):
 
 
 h1_2_meshes = _files(os.path.join(TOP_ASSETS_REL, 'meshes', 'h1_2', '*.STL'))
+magpie_meshes = _files(os.path.join(TOP_ASSETS_REL, 'meshes', 'magpie', '*.stl'))
 
 if not os.path.isdir(TOP_ASSETS_ABS):
     raise RuntimeError(
@@ -68,6 +69,7 @@ for src_rel in _top_descriptors:
         # Pinocchio-flavor URDF: rewrite top-level-relative mesh paths so they
         # resolve against the share-layout location (meshes alongside the URDF).
         content = content.replace('../meshes/h1_2/', 'meshes/')
+        content = content.replace('../meshes/magpie/', 'meshes/magpie/')
     with open(dst_abs, 'w') as f:
         f.write(content)
     h1_2_descriptors.append(os.path.relpath(dst_abs, HERE))
@@ -86,6 +88,7 @@ data_files = [
     # H1-2 assets: meshes + URDFs/SRDFs come from the top-level canonical
     # location; *.xml / *.png / README.md remain submodule-only.
     ('share/' + package_name + '/assets/h1_2/meshes', h1_2_meshes),
+    ('share/' + package_name + '/assets/h1_2/meshes/magpie', magpie_meshes),
     ('share/' + package_name + '/assets/h1_2', h1_2_descriptors + h1_2_local_extras),
     ('share/' + package_name + '/assets', _files(
         'assets/h1-2_tf.jpg',
