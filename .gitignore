@@ -1,0 +1,7 @@
+# Build/staging artifacts
+_install_staging/
+build/
+install/
+*.egg-info/
+__pycache__/
+*.pyc

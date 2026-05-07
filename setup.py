@@ -28,10 +28,6 @@ def _files(*patterns):
 
 
 h1_2_meshes = _files(os.path.join(TOP_ASSETS_REL, 'meshes', 'h1_2', '*.STL'))
-h1_2_descriptors = _files(
-    os.path.join(TOP_ASSETS_REL, 'ros_assets', 'h1_2*.urdf'),
-    os.path.join(TOP_ASSETS_REL, 'ros_assets', 'h1_2*.srdf'),
-)
 
 if not os.path.isdir(TOP_ASSETS_ABS):
     raise RuntimeError(
@@ -41,8 +37,40 @@ if not os.path.isdir(TOP_ASSETS_ABS):
     )
 if not h1_2_meshes:
     raise RuntimeError(f"No H1-2 meshes found under {TOP_ASSETS_ABS}/meshes/h1_2/")
-if not h1_2_descriptors:
+
+# Stage URDFs/SRDFs in a build dir so we can rewrite the relative-path Pinocchio
+# variants. Top-level URDFs use '../meshes/h1_2/...' (relative from ros_assets/);
+# in our install they live at share/<pkg>/assets/h1_2/<name>.urdf alongside
+# meshes at share/<pkg>/assets/h1_2/meshes/, so paths are rewritten to
+# 'meshes/...' to resolve correctly under the share/ layout. The *_ros.urdf
+# variants use package:// and are copied through unchanged.
+STAGE_DIR = os.path.join(HERE, '_install_staging', 'h1_2')
+os.makedirs(STAGE_DIR, exist_ok=True)
+# Clear stale entries so renamed/removed top-level files don't linger.
+for stale in os.listdir(STAGE_DIR):
+    os.remove(os.path.join(STAGE_DIR, stale))
+
+_top_descriptors = _files(
+    os.path.join(TOP_ASSETS_REL, 'ros_assets', 'h1_2*.urdf'),
+    os.path.join(TOP_ASSETS_REL, 'ros_assets', 'h1_2*.srdf'),
+)
+if not _top_descriptors:
     raise RuntimeError(f"No H1-2 URDF/SRDF found under {TOP_ASSETS_ABS}/ros_assets/")
+
+h1_2_descriptors = []
+for src_rel in _top_descriptors:
+    src_abs = os.path.join(HERE, src_rel)
+    name = os.path.basename(src_abs)
+    dst_abs = os.path.join(STAGE_DIR, name)
+    with open(src_abs, 'r') as f:
+        content = f.read()
+    if name.endswith('.urdf') and '_ros' not in name:
+        # Pinocchio-flavor URDF: rewrite top-level-relative mesh paths so they
+        # resolve against the share-layout location (meshes alongside the URDF).
+        content = content.replace('../meshes/h1_2/', 'meshes/')
+    with open(dst_abs, 'w') as f:
+        f.write(content)
+    h1_2_descriptors.append(os.path.relpath(dst_abs, HERE))
 
 h1_2_local_extras = _files(
     'assets/h1_2/*.xml',
