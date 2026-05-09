@@ -12,7 +12,6 @@ def _launch_setup(context):
     package_path = get_package_share_directory("h12_ros2_model")
     asset_path = f"{package_path}/assets"
     urdf_filename = {
-        "inspire": "h1_2_ros.urdf",
         "magpie": "h1_2_magpie_ros.urdf",
         "handless": "h1_2_handless_ros.urdf",
     }[model]
@@ -59,7 +58,7 @@ def generate_launch_description():
             DeclareLaunchArgument(
                 "model",
                 default_value="magpie",
-                choices=["handless", "inspire", "magpie"],
+                choices=["handless", "magpie"],
                 description="Robot model variant",
             ),
             OpaqueFunction(function=_launch_setup),

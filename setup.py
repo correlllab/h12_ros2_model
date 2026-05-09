@@ -4,11 +4,12 @@ from setuptools import find_packages, setup
 
 package_name = 'h12_ros2_model'
 
-# Top-level repo's canonical asset directory. This package is no longer
-# standalone-buildable: it must live at <repo>/core_ws/src/h12_ros2_model so
-# that ../../../assets/ resolves. See README.md.
+# Top-level repo's canonical asset directory (the CL_Assets submodule). This
+# package is no longer standalone-buildable: it must live at
+# <repo>/core_ws/src/h12_ros2_model so that ../../../CL_Assets/ resolves.
+# See README.md.
 HERE = os.path.dirname(os.path.abspath(__file__))
-TOP_ASSETS_REL = os.path.join('..', '..', '..', 'assets')
+TOP_ASSETS_REL = os.path.join('..', '..', '..', 'CL_Assets')
 TOP_ASSETS_ABS = os.path.normpath(os.path.join(HERE, TOP_ASSETS_REL))
 
 
@@ -32,9 +33,10 @@ magpie_meshes = _files(os.path.join(TOP_ASSETS_REL, 'meshes', 'magpie', '*.stl')
 
 if not os.path.isdir(TOP_ASSETS_ABS):
     raise RuntimeError(
-        f"h12_ros2_model expected top-level assets at {TOP_ASSETS_ABS} but "
-        "the directory does not exist. This package must be built inside the "
-        "Humanoid_Simulation workspace; standalone clones are not supported."
+        f"h12_ros2_model expected the CL_Assets submodule at {TOP_ASSETS_ABS} "
+        "but the directory does not exist. This package must be built inside "
+        "the Humanoid_Simulation workspace with the CL_Assets submodule "
+        "checked out; standalone clones are not supported."
     )
 if not h1_2_meshes:
     raise RuntimeError(f"No H1-2 meshes found under {TOP_ASSETS_ABS}/meshes/h1_2/")
@@ -74,26 +76,15 @@ for src_rel in _top_descriptors:
         f.write(content)
     h1_2_descriptors.append(os.path.relpath(dst_abs, HERE))
 
-h1_2_local_extras = _files(
-    'assets/h1_2/*.xml',
-    'assets/h1_2/*.png',
-    'assets/h1_2/README.md',
-)
-
 data_files = [
     ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
     ('share/' + package_name, ['package.xml']),
     ('share/' + package_name + '/launch', glob('launch/*.py')),
     ('share/' + package_name + '/rviz', glob('rviz/*.rviz')),
-    # H1-2 assets: meshes + URDFs/SRDFs come from the top-level canonical
-    # location; *.xml / *.png / README.md remain submodule-only.
     ('share/' + package_name + '/assets/h1_2/meshes', h1_2_meshes),
     ('share/' + package_name + '/assets/h1_2/meshes/magpie', magpie_meshes),
-    ('share/' + package_name + '/assets/h1_2', h1_2_descriptors + h1_2_local_extras),
-    ('share/' + package_name + '/assets', _files(
-        'assets/h1-2_tf.jpg',
-        'assets/LICENSE',
-    )),
+    ('share/' + package_name + '/assets/h1_2', h1_2_descriptors),
+    ('share/' + package_name + '/assets', _files('assets/LICENSE')),
 ]
 
 setup(

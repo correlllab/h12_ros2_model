@@ -9,8 +9,10 @@ ROS2 package of h12 robot description.
   at build time by `setup.py` and installed under the package's `share/` tree,
   so consumers can keep using `package://h12_ros2_model/assets/h1_2/...` URLs
   and the runtime layout is unchanged.
-- The `assets/h1_2/h1_2_ros.urdf` (sourced from `assets/ros_assets/`) contains
-  description with package mesh paths, suitable for ROS integration.
+- The default robot is the H1-2 with Magpie eflesh grippers
+  (`assets/h1_2/h1_2_magpie_ros.urdf`, sourced from
+  `assets/ros_assets/h1_2_magpie_ros.urdf`). A `handless` variant is also
+  available — selectable via the `model:=handless` launch argument.
 
 > **Not standalone-buildable.** This package must live at
 > `<Humanoid_Simulation>/core_ws/src/h12_ros2_model` so that `setup.py` can
